@@ -2,24 +2,21 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
-RUN apt update && \
-    apt upgrade && \
-    apt install -y\
+RUN apt update -y && \
+    apt upgrade -y && \
+    apt install -y \
+      vim \
       g++ \
       bash \
       git \
-      cmake=3.22.2 \
-      pkg-config \
       curl \
       zip \
       unzip \
       tar
+RUN apt install -y \
+      cmake \
+      pkg-config
 
-RUN git clone https://github.com/Microsoft/vcpkg.git /opt/vcpkg
-WORKDIR /opt/vcpkg
-RUN ./bootstrap-vcpkg.sh && ./vcpkg integrate install
-
-## installing dependencies
-RUN ./vcpkg install uwebsockets
+EXPOSE 8080
 
 WORKDIR /app
