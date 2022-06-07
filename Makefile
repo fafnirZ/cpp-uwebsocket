@@ -1,9 +1,8 @@
-cpp:
-	docker build -t backend \
-	docker run -p 8080:8080 backend
+start:
+	docker compose up
 
-cpp-rm:
-	docker stop backend
+build:
+	docker compose up --build
 
 clean:
-	cpp-rm 
+	docker compose down

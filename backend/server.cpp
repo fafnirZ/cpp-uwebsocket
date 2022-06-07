@@ -4,6 +4,6 @@
 int main(int argc, char const *argv[])
 {
   uWs::App().get("/hello", [](auto *res, auto *req) {
-    res->end("hello world");
+     res->end("hello world");
   })
 }

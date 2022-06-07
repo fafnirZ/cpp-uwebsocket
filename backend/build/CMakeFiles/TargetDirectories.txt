@@ -1,3 +1,0 @@
-/Users/jackyxie/dev/3900-prototype/backend/build/CMakeFiles/server.dir
-/Users/jackyxie/dev/3900-prototype/backend/build/CMakeFiles/edit_cache.dir
-/Users/jackyxie/dev/3900-prototype/backend/build/CMakeFiles/rebuild_cache.dir
