@@ -1,7 +1,7 @@
 [
 {
   "directory": "/Users/jackyxie/dev/3900-prototype/backend/build",
-  "command": "/usr/bin/clang++  -I/Users/jackyxie/dev/3900-prototype/backend/UWEBSOCKETS_INCLUDE_DIRS-NOTFOUND -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -std=gnu++17 -o CMakeFiles/server.dir/server.cpp.o -c /Users/jackyxie/dev/3900-prototype/backend/server.cpp",
+  "command": "/usr/bin/clang++  -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/MetricKit.framework/Headers -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -std=gnu++17 -o CMakeFiles/server.dir/server.cpp.o -c /Users/jackyxie/dev/3900-prototype/backend/server.cpp",
   "file": "/Users/jackyxie/dev/3900-prototype/backend/server.cpp"
 }
 ]
