@@ -1,13 +1,15 @@
 #include <iostream>
 #include <uwebsockets/App.h>
-
-using namespace uWs;
+#include <uwebsockets/HttpContext.h>
+#include <uwebsockets/AsyncSocket.h>
 
 int main(int argc, char const *argv[])
 {
-  uWs::App().get("/hello", [](auto *res, auto *req) {
-     res->end("hello world");
-  }).listen(9001, [](auto *listenSocket) {
-    std::cout << "Listening for connections..." << std::endl;
+  uWS::App().get("/*", [](auto *res, auto *req) {
+    res->end("hello world");
+  }).listen(8080, [](auto *listenSocket) {
+    if(listenSocket) {
+        std::cout << "Listening for connections..." << std::endl;
+    }
   }).run();
 }

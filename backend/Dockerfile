@@ -12,7 +12,8 @@ RUN apt update -y && \
       curl \
       zip \
       unzip \
-      tar
+      tar \
+      libstdc++6
 RUN apt install -y \
       cmake \
       pkg-config
